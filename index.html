@@ -79,14 +79,15 @@
       font-size: 1.1rem;
     }
     #contact img {
-      background-color: white; /* fills transparent IN with white */
-      border-radius: 4px;
-      padding: 5px;
-      transition: transform 0.3s ease;
+    border-radius: 4px;
+    padding: 5px;
+    transition: transform 0.3s ease;
+    /* background-color: white; <-- remove this line */
     }
     #contact img:hover {
       transform: scale(1.1);
     }
+
     /* Animation */
     @keyframes fadeIn {
       from {opacity: 0; transform: translateY(-20px);}
@@ -109,12 +110,22 @@
     <h2>About Me!</h2>
     <p>
       I’m currently studying Real-Time Interactive Simulation at SIT DigiPen.<br><br>
-      My dream is to one day create a fantasy MMORPG — it’s a long journey, but every project brings me closer to that goal!
+      My dream is to one day create a fantasy MMORPG!!!
     </p>
   </section>
 
   <section id="projects">
     <h2>My Projects</h2>
+    <div class="project">
+      <h3>Bombustic!</h3>
+      <p>
+        This game is about a terrorist planting a bomb on the bus! The bomb's timer tick down based on how fast the bus is moving. The faster you move the slower it ticks down! save all the passanger before the time runs out!
+      </p>
+      <video width="100%" controls poster="Video/Bombustic/thumbnail.png">
+        <source src="Video/Bombustic/bombustic.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
     <div class="project">
       <h3>Germ Guardian</h3>
       <p>
